@@ -1,0 +1,135 @@
+.montserrat-extrabold {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Image Setting */
+.image-container {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(100vw);
+    background: #ff602bdb;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 40%;
+    margin-right: 60px;
+    transition: transform 0.4s;
+}
+
+.overlay.visible {
+    transform: translateY(-50%) translateX(0);
+}
+
+.overlay.slide-right {
+    transform: translateY(-50%) translateX(100%);
+}
+
+.overlay.slide-left {
+    transform: translateY(-50%) translateX(0);
+}
+
+.overlay .text-box h1 {
+    color: #fceb00;
+    font-weight: bold;
+}
+
+.overlay .text-box p {
+    color: #ffffff;
+}
+
+/* Tombol Buy Now */
+.overlay .text-box .btn-custom {
+    background-color: #fceb00;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.overlay .text-box .btn-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: left 0.4s;
+    z-index: 1;
+}
+
+.overlay .text-box .btn-custom:hover::before {
+    left: 0;
+}
+
+.overlay .text-box .btn-custom:hover {
+    color: #fff;
+}
+
+.overlay .text-box .btn-custom span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Tombol Show Mpre */
+.show-more .btn-show {
+    color: white;
+    border: none;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.show-more .btn-show::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    transition: bottom 0.4s;
+    z-index: 1;
+}
+
+.show-more .btn-show:hover::before {
+    bottom: 0;
+}
+
+.show-more .btn-show:hover {
+    color: #000000;
+}
+
+.show-more .btn-show span {
+    position: relative;
+    z-index: 2;
+}
+
+

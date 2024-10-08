@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-image: url('/images/BackgroundSession.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.montserrat-extrabold {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Tombol Show Mpre */
+.register .btn-show {
+    color: #ffffffdb;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.register .btn-show::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    transition: bottom 0.4s;
+    z-index: 1;
+}
+
+.register .btn-show:hover::before {
+    bottom: 0;
+}
+
+.register .btn-show:hover {
+    color: #ffffff;
+}
+
+.register .btn-show span {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Input Style */
+.requiredUser-Admin-SuperAdmin {
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.requiredUser-Admin-SuperAdmin::placeholder {
+    color: #000000;
+}
+
+
+.requiredUser-Admin-SuperAdmin:focus {
+    border-bottom-color: #000000;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+}
+

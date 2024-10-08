@@ -1,0 +1,70 @@
+.montserrat-extrabold {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* SVG */
+.content-container {
+    position: relative;
+}
+
+svg {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeDown 1s forwards;
+}
+
+.text-box h1 {
+    text-align: center;
+    color: #fceb00;
+}
+
+.text-box p a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes fadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1s;
+}
+
